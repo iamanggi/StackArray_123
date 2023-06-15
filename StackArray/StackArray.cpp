@@ -12,18 +12,18 @@ public:
 		top = -1;
 	}
 	void push() {
+		cout << "\nEnter a element: ";
+		string element;
+		getline(cin, element);
+
 		if (top == 4) {  //step 1
 			cout << "Number of data exceeds the limit" << endl;
 		}
-
-		string element;
-		getline(cin, element);
 
 		top++; //step 2
 		stack_array[top] = element;  //step 3
 		cout << endl;
 		cout << element << " ditambahkan{pushed)" << endl;
-
 	}
 
 	void pop() {
@@ -66,10 +66,7 @@ int main() {
 		getline(cin, input);
 		char ch = (input.empty() ? '0' : input[0]);
 		switch (ch) {
-		case'1': {
-			cout << "\nEnter a element: ";
-			string element;
-			getline(cin, element);
+		case'1': {	
 			s.push();
 			break;
 		}
@@ -92,7 +89,5 @@ int main() {
 			cout << "\nInvalid choice." << endl;
 			break;
 		}
-	}
-
-		
+	}	
 }
