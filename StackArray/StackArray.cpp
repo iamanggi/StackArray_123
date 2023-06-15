@@ -18,6 +18,7 @@ public:
 
 		if (top == 4) {  //step 1
 			cout << "Number of data exceeds the limit" << endl;
+			return;
 		}
 
 		top++; //step 2
@@ -56,7 +57,7 @@ int main() {
 	StackArray s;
 	while (true) {
 		cout << endl;
-		cout << "\n***Stack Menu***\n";
+		cout << "***Stack Menu***\n";
 		cout << "1. Push\n";
 		cout << "2. Pop\n";
 		cout << "3. Display\n";
